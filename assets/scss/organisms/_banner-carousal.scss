@@ -1,0 +1,40 @@
+.aur-banner {
+
+    &__desk-lrg {
+        display: none;
+    }
+
+    &__desk {
+        display: none;
+    }
+
+    &__tab {
+        display: none;
+    }
+
+    &__tabmini {
+        display: none;
+    }
+
+    &__mob {
+        display: none;
+    }
+
+    &__bgimg {
+        background-size: cover;
+        background-position: 100% top;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 700px;
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1536px) {
+    .aur-banner {
+
+        &__desk-lrg {
+            display: block;
+        }
+    }
+}
