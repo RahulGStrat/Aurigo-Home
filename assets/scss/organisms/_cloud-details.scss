@@ -1,0 +1,129 @@
+.aur-cloud_details {
+    background-color: #f0f2f3;
+    max-width: 1410px;
+    padding: 0 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__stats {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        padding: 55px 375px 45px 0;
+
+        h2 {
+            font-size: 40px;
+            line-height: 40px;
+            color: #015f74;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+
+            .stat {
+                font-size: 64px;
+                line-height: 64px;
+                font-weight: bold;
+                color: #ee3135;
+                display: block;
+            }
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 21px;
+            color: #015f74;
+            font-weight: 400;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 20px;
+            right: 0;
+            width: 335px;
+            height: 225px;
+            background: url(/assets/images/tablet.png) no-repeat center center;
+        }
+    }
+
+    &__wrap {
+        width: 33.3%;
+        padding: 0 50px;
+        border-right: 1px solid #b4b5b6;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
+
+.section {
+    background: #f0f2f3;
+}
+
+
+@include tablet-pro {
+    .aur-cloud_details {
+        &__stats {
+            padding: 55px 0 285px 0;
+
+            &::before {
+                right: calc(50% - 168px);
+                top: auto;
+                bottom: 20px;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .aur-cloud_details {
+        &__stats {
+            padding: 55px 0 285px 0;
+
+            &::before {
+                right: calc(50% - 168px);
+                top: auto;
+                bottom: 20px;
+            }
+        }
+
+        &__wrap {
+            width: 100%;
+            padding: 0;
+            text-align: center;
+            border: none;
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .aur-cloud_details {
+        &__stats {
+            padding: 55px 0 285px 0;
+
+            &::before {
+                right: calc(50% - 168px);
+                top: auto;
+                bottom: 20px;
+            }
+        }
+
+        &__wrap {
+            width: 100%;
+            padding: 0;
+            text-align: center;
+            border: none;
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
