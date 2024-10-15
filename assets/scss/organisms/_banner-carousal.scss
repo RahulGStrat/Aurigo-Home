@@ -111,7 +111,7 @@
 }
 
 
-@media (min-width: 1024px) and (max-width: 1199px) {
+@include tablet-pro {
     .aur-banner {
         height: 630px;
 
@@ -126,7 +126,7 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@include tablet {
     .aur-banner {
         height: 830px;
         align-items: flex-start;
@@ -144,9 +144,10 @@
 }
 
 
-@media (max-width: 767px) {
+@include mobile {
     .aur-banner {
         height: 550px;
+        flex-direction: column;
 
         &__mob {
             display: block;
@@ -165,9 +166,15 @@
             padding-bottom: 12px;
 
             &::before {
-                top: 6%;
+                top: 9%;
                 height: 31px;
             }
+        }
+
+        &__sb-txt {
+            font-size: 20px;
+            line-height: 30px;
+            display: inline;
         }
     }
 }
