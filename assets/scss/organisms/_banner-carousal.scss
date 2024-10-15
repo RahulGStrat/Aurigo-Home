@@ -96,9 +96,32 @@
         left: 0;
         top: 0;
     }
+    
 }
 
+// slider
+.banner-slider {
+    overflow: hidden;
+    
+    .slick-dots {
+        bottom: 15px;
+    }
 
+    .slick-dots li button:before {
+        border: 1px solid #fff;
+        background-color: rgba(0, 0, 0, 0);
+        opacity: 1;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        content: "" !important;
+    }
+
+    .slick-dots li.slick-active button:before {
+        color: #ebebee;
+        background-color: #fff;
+    }
+}
 
 @media (min-width: 1200px) and (max-width: 1536px) {
     .aur-banner {
