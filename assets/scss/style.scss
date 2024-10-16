@@ -18,7 +18,7 @@
 
 // molecule
 @import "./molecules/mw-cloud";
-
+@import "./molecules/resources-tile";
 
 
 // organisms
@@ -26,6 +26,10 @@
 @import "./organisms/cloud-details";
 @import "./organisms/features";
 @import "./organisms/build-for-tmrw";
+@import "./organisms/mw-cloudbox";
+@import "./organisms/au-header-footer";
+@import "./organisms/testimonials";
+@import "./organisms/resources";
 
 
 

@@ -4,12 +4,14 @@
     padding: 0 40px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    align-items: center;
 
     &__stats {
         display: flex;
         flex-wrap: wrap;
         position: relative;
-        padding: 55px 375px 45px 0;
+        padding: 55px 0px 45px 0;
 
         h2 {
             font-size: 40px;
@@ -34,16 +36,6 @@
             color: #015f74;
             font-weight: 400;
         }
-
-        &::before {
-            position: absolute;
-            content: "";
-            top: 20px;
-            right: 0;
-            width: 335px;
-            height: 225px;
-            background: url(/assets/images/tablet.png) no-repeat center center;
-        }
     }
 
     &__wrap {
@@ -55,6 +47,14 @@
             border-right: none;
         }
     }
+
+    &__img {
+        width: 40%;
+
+        img {
+            width: 100%;
+        }
+    }
 }
 
 .section {
@@ -64,28 +64,23 @@
 
 @include tablet-pro {
     .aur-cloud_details {
+        flex-direction: column;
         &__stats {
-            padding: 55px 0 285px 0;
+            padding: 55px 0 40px 0;
+        }
 
-            &::before {
-                right: calc(50% - 168px);
-                top: auto;
-                bottom: 20px;
-            }
+        &__img {
+            width: 40%;
         }
     }
 }
 
 @include tablet {
     .aur-cloud_details {
-        &__stats {
-            padding: 55px 0 285px 0;
+        flex-direction: column;
 
-            &::before {
-                right: calc(50% - 168px);
-                top: auto;
-                bottom: 20px;
-            }
+        &__stats {
+            padding: 55px 0 40px 0;
         }
 
         &__wrap {
@@ -98,20 +93,21 @@
             &:last-child {
                 margin-bottom: 0;
             }
+        }
+
+        &__img {
+            width: 50%;
+            padding-bottom: 20px;
         }
     }
 }
 
 @include mobile {
     .aur-cloud_details {
-        &__stats {
-            padding: 55px 0 285px 0;
+        flex-direction: column;
 
-            &::before {
-                right: calc(50% - 168px);
-                top: auto;
-                bottom: 20px;
-            }
+        &__stats {
+            padding: 55px 0 40px 0;
         }
 
         &__wrap {
@@ -124,6 +120,11 @@
             &:last-child {
                 margin-bottom: 0;
             }
+        }
+
+        &__img {
+            width: 85%;
+            padding-bottom: 20px;
         }
     }
 }
