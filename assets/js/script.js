@@ -1,3 +1,15 @@
+//==============================================MENU NEW==================================
+const menuItems = document.querySelectorAll('.auN-Header__menu-list');
+menuItems.forEach(item => {
+  item.addEventListener('mouseover', () => {
+    item.classList.add('active');
+  });
+
+  item.addEventListener('mouseout', () => {
+    item.classList.remove('active');
+  });
+});
+//==============================================MENU NEW END==================================
 // slick slider for banner
 $('.banner-slider').slick({
     dots: true,
@@ -21,7 +33,7 @@ $('.banner-slider').slick({
   });
 
   // header footer script
-      // mega menu 
+      // mega menu
         // Get the modal element
         var modal = document.getElementById('searchModal');
 
@@ -78,7 +90,7 @@ $('.banner-slider').slick({
             });
         });
 
-        // mobile toggle 
+        // mobile toggle
         const Hamberger = document.querySelector('.bamber');
         const Side = document.querySelector('.side');
         const mob = document.querySelector('.bodyy');
@@ -89,7 +101,7 @@ $('.banner-slider').slick({
             // console.log("One");
         })
 
-        //scroll 
+        //scroll
         const Head = document.querySelector(".navbar");
         const effect = document.querySelector(".effect");
 

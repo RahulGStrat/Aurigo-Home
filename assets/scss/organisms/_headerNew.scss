@@ -1,0 +1,80 @@
+.auN-Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 70px;
+    max-width: 1580px;
+    padding: 0 40px;
+    &__logo{
+        display: flex;
+        align-items: center;
+    }
+    &__Right{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__main{
+        position: fixed;
+        top: 12px;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        background: #fff;
+        transition: 0.5s ease;
+    }
+    &__menu{
+        display: flex;
+        &-list{
+            margin: 0 12px 0 0;
+        }
+        &-link{
+            font-size: 15px;
+            line-height: 20px;
+            text-transform: uppercase;
+            font-weight: 900;
+            position: relative;
+            display: block;
+            padding: 25px 30px 25px 0;
+            text-decoration: none;
+            color: #002a2f;
+            position: relative;
+            &:before {
+                position: absolute;
+                top: 28px;
+                right: 10px;
+                width: 5px;
+                height: 5px;
+                content: "";
+                border: solid #ee3135;
+                border-width: 0 2.5px 2.5px 0;
+                display: inline-block;
+                padding: 3px;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+            }
+            &:hover{
+                color: #015f74;
+            }
+        }
+    }
+    &__quickLink{
+        display: flex;
+        &-list{
+            margin: 0 0 0 15px;
+            padding: 0 0 0 15px;
+            border-left: solid 1px #ccd0d1;
+            &:first-child{
+                margin: 0px;
+                padding: 0px;
+                border: none;
+            }
+        }
+        &-link{
+            color: #505050;
+            text-decoration: none;
+            font-size: 13px;
+        }
+    }
+}
