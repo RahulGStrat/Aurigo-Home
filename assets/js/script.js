@@ -20,8 +20,9 @@ $('.banner-slider').slick({
     focusOnSelect: false,
   });
 
-  // header footer script
-      // mega menu 
+  
+
+// mega menu 
         // Get the modal element
         var modal = document.getElementById('searchModal');
 
@@ -101,23 +102,4 @@ $('.banner-slider').slick({
                     Head.classList.remove("effect");
                 }
             })
-        }
-
-        // resources page
-        // Select the necessary elements
-        const Rbutton = document.querySelector(".ao-resource__cta");
-        const liSt = document.querySelector(".ao-resource__outer");
-        const Btext = document.querySelector(".ao-resource__rightcta");
-
-        // Check if elements are found
-        if (Rbutton && liSt && Btext) {
-        Rbutton.addEventListener("click", () => {
-            // Toggle the visibility class on liSt
-            liSt.classList.toggle("visible-tile");
-
-            // Toggle the text content of Btext
-            Btext.textContent = Btext.textContent === "Explore More" ? "Explore Less" : "Explore More";
-            });
-        } else {
-        console.error("One or more elements are not found.");
         }

@@ -1,9 +1,13 @@
+.aur-build_outer {
+    background-color: #f0f2f3;
+}
+
 .aur-build_for_tmrw {
     max-width: 1410px;
     margin: 0 auto;
     padding: 50px 40px;
     padding-bottom: 60px;
-    background-color: #f0f2f3;
+    
 
     &__wrap {
         background: #fff;
