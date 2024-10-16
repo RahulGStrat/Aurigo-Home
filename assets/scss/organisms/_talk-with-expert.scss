@@ -10,6 +10,7 @@
         margin: 0 auto;
         padding: 50px 40px;
         display: flex;
+        justify-content: center;
     }
 
     &__cnt {
@@ -30,7 +31,7 @@
             position: absolute;
             content: "";
             width: 3px;
-            height: 95%;
+            height: 80%;
             right: -1.5%;
             top: 10%;
             background-color: #fff;
@@ -46,6 +47,7 @@
     &__inner {
         display: flex;
         gap: 10px;
+        padding-top: 10px;
 
         .aur-btn {
             min-width: 220px;
@@ -81,15 +83,17 @@
             img {
                 width: 100%;
                 height: auto;
+                display: block;
             }
         }
 
         &-logo-2 {
-            width: 110px;
+            width: 120px;
 
             img {
                 width: 100%;
                 height: auto;
+                display: block;
             }
         }
 
@@ -99,6 +103,7 @@
             img {
                 width: 100%;
                 height: auto;
+                display: block;
             }
         }
 
@@ -110,7 +115,114 @@
                 height: auto;
             }
         }
+
+        &-out {
+            display: flex;
+            flex-direction: column;
+        }
     }
+}
 
+@include tablet-pro {
+    .aur-talk {
+        &__wrap {
+            flex-direction: column;
+            gap: 40px;
+        }
 
+        &__cnt {
+            width: 100%;
+            margin-bottom: 40px;
+
+            h2 {
+                text-align: center;
+            }
+
+            &::after {
+                width: 35%;
+                height: 3px;
+                top: unset;
+                bottom: -40%;
+                right: 33%;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .aur-talk {
+        &__wrap {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &__cnt {
+            width: 100%;
+            margin-bottom: 40px;
+
+            h2 {
+                text-align: center;
+            }
+
+            &::after {
+                width: 35%;
+                height: 3px;
+                top: unset;
+                bottom: -40%;
+                right: 33%;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .aur-talk {
+        &__wrap {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &__inner {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__rating {
+            flex-direction: column;
+            align-items: center;
+
+            &-out {
+                align-items: center;
+            }
+        }
+
+        &__cnt {
+            width: 100%;
+            margin-bottom: 40px;
+
+            h2 {
+                text-align: center;
+            }
+
+            &::after {
+                width: 71%;
+                height: 3px;
+                top: unset;
+                bottom: -20%;
+                right: 14%;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
