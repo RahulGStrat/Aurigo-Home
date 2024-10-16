@@ -129,13 +129,14 @@
 
     
 
-@media (min-width: 1200px) and (max-width: 1536px) {
+@media (min-width: 1200px) and (max-width: 2000px) {
     .aur-banner {
         height: 700px;
 
-        &__desk-lrg {
+        &__desk {
             display: block;
         }
+
     }
 }
 
