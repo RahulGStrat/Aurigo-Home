@@ -1,0 +1,116 @@
+.aur-talk {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__wrap {
+        max-width: 1410px;
+        margin: 0 auto;
+        padding: 50px 40px;
+        display: flex;
+    }
+
+    &__cnt {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        h2 {
+            font-size: 28px;
+            line-height: 32px;
+            font-weight: 400;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 3px;
+            height: 95%;
+            right: -1.5%;
+            top: 10%;
+            background-color: #fff;
+        }
+
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    &__inner {
+        display: flex;
+        gap: 10px;
+
+        .aur-btn {
+            min-width: 220px;
+            margin-right: 0;
+
+            .aur-btn__txt {
+                padding: 10px 20px;
+            }
+
+            .aur-btn__txt--wht {
+                color: #383838;
+                border: 1px solid #fff;
+
+                &:hover {
+                    color: #fff;
+                    background-color: #015f74;
+                }
+            }
+        }
+    }
+
+    &__rating {
+        display: flex;
+        gap: 20px;
+
+        a {
+            display: inline-block;
+        }
+
+        &-logo {
+            width: 40px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &-logo-2 {
+            width: 110px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &-logo-3 {
+            width: 150px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &-star {
+            width: 100px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+
+}
