@@ -60,17 +60,81 @@
             text-decoration: none;
 
             &::after {
-                content: "\f105";
+                content: ">";
                 margin-left: 5px;
-                font-weight: normal;
-                font-family: 'Font Awesome 5 Free';
-                font-weight: 900;
-
+                font-weight: bold;
             }
 
             &:hover {
                 color: #000;
                 text-decoration: underline;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .aur-build_for_tmrw {
+        &__wrap {
+            flex-direction: column;
+        }
+
+        &__img {
+            width: 80%;
+            padding: 0;
+            padding-bottom: 30px;
+            border-right: none;
+            border-bottom: 1px solid #b4b5b6;
+        }
+
+        &__cnt {
+            width: 80%;
+            padding: 0;
+            padding-top: 20px;
+
+            p {
+                text-align: center;
+            }
+
+            a {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .aur-build_for_tmrw {
+        &__wrap {
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        &__ribbon {
+            width: 60px;
+        }
+
+        &__img {
+            width: 90%;
+            padding: 0;
+            padding-bottom: 20px;
+            border-right: none;
+            border-bottom: 1px solid #b4b5b6;
+        }
+
+        &__cnt {
+            width: 100%;
+            padding: 0;
+            padding-top: 20px;
+
+            p {
+                text-align: center;
+            }
+
+            a {
+                display: block;
+                text-align: center;
             }
         }
     }
