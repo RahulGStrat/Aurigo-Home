@@ -1,0 +1,22 @@
+.aur-mwbox {
+
+    &__hd {
+        font-size: 28px;
+        line-height: 32px;
+        color: #2a2d2e;
+        font-weight: 500;
+
+        &::after {
+            display: inline-block;
+            vertical-align: middle;
+            content: "";
+            position: relative;
+            top: -3px;
+            width: 62px;
+            height: 34px;
+            background: url(https://www.aurigo.com/wp-content/themes/aurigo/images/icon-masterworks.svg?a) no-repeat center center;
+            background-size: 100% auto;
+            margin: 0 0 0 20px;
+        }
+    }
+}

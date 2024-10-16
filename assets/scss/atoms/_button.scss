@@ -20,6 +20,7 @@
             color: #ee3135;
             background-color: #fff;
             border: 1px solid #ee3135;
+            transition: 0.25s ease;
         }
 
         &--wht{
@@ -32,7 +33,39 @@
                 color: #fff;
                 background-color: #053445;
                 border: 1px solid #fff;
+                transition: 0.25s ease;
             }
+        }
+    }
+}
+
+.aur-arrowbtn {
+    margin-left: 20px;
+    width: 50%;
+    max-width: 180px;
+    
+
+    &__txt {
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        padding: 12px 8px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #015f74;
+        border-radius: 2px;
+        transition: 0.5s;
+
+        &:hover {
+            color: #fff;
+        }
+
+        &::after {
+            font-family: "Font Awesome 5 Pro";
+            content: "\f105";
+            margin-left: 15px;
+            font-weight: normal;
         }
     }
 }
