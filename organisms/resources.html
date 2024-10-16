@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- styles -->
+  <link rel="stylesheet" href="../assets/css/aos.css">
+  <link rel="stylesheet" href="../assets/css/slick.css">
+  <link rel="stylesheet" href="../assets/css/slick-theme.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <!-- styles -->
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- body content start -->
+  <div class="ao-resource ao-essential right">
+    <div class="ao-resource__heading">Resources</div>
+    <div class="ao-resource__outer">
+      <div class="ao-resource__tile-out">
+        <div class="ao-res-tile">
+          <div
+            style="background-image: url(https://www.aurigo.com/wp-content/uploads/2023/12/Thumbnail_Supply_chain_management.png);"
+            class="ao-res-tile__img">
+            <p>Supply chain management for capital</p>
+          </div>
+          <div class="ao-res-tile__cnt">
+            <h5 class="ao-res-tile__cnt-txt">Guide</h5>
+            <a href="#" class="ao-res-tile__cnt-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="ao-resource__tile-out">
+        <div class="ao-res-tile">
+          <div
+            style="background-image: url(https://www.aurigo.com/wp-content/uploads/2023/12/Thumbnail_Owner_contractor-300x267.png);"
+            class="ao-res-tile__img">
+            <p>The owner-contractor alignment handbook</p>
+          </div>
+          <div class="ao-res-tile__cnt">
+            <h5 class="ao-res-tile__cnt-txt">Guide</h5>
+            <a href="#" class="ao-res-tile__cnt-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="ao-resource__tile-out">
+        <div class="ao-res-tile">
+          <div
+            style="background-image: url(https://www.aurigo.com/wp-content/uploads/2023/10/Warranties-Thumbnail-300x267.png);"
+            class="ao-res-tile__img">
+            <p>Owners' top tips for managing warranties and guarantees</p>
+          </div>
+          <div class="ao-res-tile__cnt">
+            <h5 class="ao-res-tile__cnt-txt">Guide</h5>
+            <a href="#" class="ao-res-tile__cnt-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="ao-resource__tile-out">
+        <div class="ao-res-tile">
+          <div style="background-image: url(https://www.aurigo.com/wp-content/uploads/2023/09/ROW-thumbnail-300x267.png);"
+            class="ao-res-tile__img">
+            <p>Right of way 101: Understanding ROW and the processes involved</p>
+          </div>
+          <div class="ao-res-tile__cnt">
+            <h5 class="ao-res-tile__cnt-txt">Guide</h5>
+            <a href="#" class="ao-res-tile__cnt-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="ao-resource__tile-out">
+        <div class="ao-res-tile">
+          <div
+            style="background-image: url(https://www.aurigo.com/wp-content/uploads/2023/09/Digitizing-field-data-thumbnail-300x267.png);"
+            class="ao-res-tile__img">
+            <p>Digitizing Field Data: Improving operational efficiency and decision - making</p>
+          </div>
+          <div class="ao-res-tile__cnt">
+            <h5 class="ao-res-tile__cnt-txt">Guide</h5>
+            <a href="#" class="ao-res-tile__cnt-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="ao-resource__tile-out">
+        <div class="ao-res-tile">
+          <div style="background-image: url(https://www.aurigo.com/wp-content/uploads/2023/09/FARM-thumbnail-300x267.png);"
+            class="ao-res-tile__img">
+            <p>Federal aid obligations and reimbursements</p>
+          </div>
+          <div class="ao-res-tile__cnt">
+            <h5 class="ao-res-tile__cnt-txt">Guide</h5>
+            <a href="#" class="ao-res-tile__cnt-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ao-resource__cta">
+      <span class="ao-resource__rightcta">Explore More</span>
+    </div>
+  </div>
+  <!-- body content end -->
+
+  <!-- scripts -->
+  <script src="../assets/js/jquery.slim.min.js"></script>
+  <script src="../assets/js/aos.js"></script>
+  <script src="../assets/js/slick.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/script.js"></script>
+  <script>
+      // const Rbutton = document.querySelector(".ao-resource__cta");
+      // const liSt = document.querySelector(".ao-resource__outer");
+      //         const Btext = document.querySelector(".ao-resource__rightcta");
+
+      //                     Rbutton.addEventListener("click", () => {
+      //   liSt.classList.toggle("visible-tile");
+      //                       if (Btext.textContent === "Explore More") {
+
+      //                         Btext.textContent = "Explore Less";
+      //                     }
+      //                     else {
+      //                         Btext.textContent = "Explore More";
+      //                   }
+      //                   });
+      // Select the necessary elements
+  const Rbutton = document.querySelector(".ao-resource__cta");
+  const liSt = document.querySelector(".ao-resource__outer");
+  const Btext = document.querySelector(".ao-resource__rightcta");
+
+  // Check if elements are found
+  if (Rbutton && liSt && Btext) {
+  Rbutton.addEventListener("click", () => {
+      // Toggle the visibility class on liSt
+      liSt.classList.toggle("visible-tile");
+
+      // Toggle the text content of Btext
+      Btext.textContent = Btext.textContent === "Explore More" ? "Explore Less" : "Explore More";
+    });
+} else {
+  console.error("One or more elements are not found.");
+}
+
+  </script>
+  <!-- scripts -->
+</body>
+
+</html>
