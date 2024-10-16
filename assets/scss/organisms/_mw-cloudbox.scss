@@ -1,5 +1,8 @@
 .aur-mwbox {
 
+    margin-top: 30px;
+    margin-bottom: -160px;
+
     &__outer {
         background: #fff;
         box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
@@ -9,6 +12,8 @@
         font-weight: normal;
         position: relative;
         z-index: 10;
+        max-width: 1090px;
+        margin: 0 auto;
     }
 
     &__hd {
@@ -226,6 +231,10 @@
 @include mobile {
     .aur-mwbox {
 
+        &__hd {
+            padding: 25px;
+        }
+
         &__seca {
             background-position: center;
         }
@@ -236,6 +245,10 @@
 
         &__box {
             width: 100%;
+        }
+
+        &__boxhd {
+            font-size: 24px;
         }
 
         &__secc {
