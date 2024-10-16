@@ -2,7 +2,10 @@
     max-width: 1410px;
     margin: 0 auto;
     padding: 50px 40px;
-    background-color: #f0f2f3;
+
+    &__bg {
+        background-color: #f0f2f3;
+    }
 
     &__title {
         margin-bottom: 30px;
