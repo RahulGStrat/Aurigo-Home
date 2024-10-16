@@ -1,10 +1,15 @@
 .aur-mwbox {
 
     &__hd {
-        font-size: 28px;
-        line-height: 32px;
-        color: #2a2d2e;
-        font-weight: 500;
+            font-size: 28px;
+            line-height: 32px;
+            color: #2a2d2e;
+            font-weight: 500;
+            text-decoration: none;
+
+            &:hover {
+                color: #2a2d2e;
+            }
 
         &::after {
             display: inline-block;
@@ -17,6 +22,66 @@
             background: url(https://www.aurigo.com/wp-content/themes/aurigo/images/icon-masterworks.svg?a) no-repeat center center;
             background-size: 100% auto;
             margin: 0 0 0 20px;
+        }
+    }
+
+    &__seca {
+        background-size: cover;
+        text-align: center;
+        padding: 30px 0px;
+        pointer-events: none;
+    } 
+
+    &__boxwrap {
+        width: 100%;
+    }
+
+    &__box {
+        width: 33.33%;
+    }
+
+    &__boxhd {
+        border-top: solid 2px #759e3d;
+        border-bottom: solid 2px #759e3d;
+        color: #759e3d;
+        padding: 15px 20px;
+        position: relative;
+        font-size: 30px;
+        font-weight: 300;
+        background: linear-gradient(to bottom, #f0f2f3 0%, #d6dde1 100%);
+        display: inline-block;
+        width: 100%;
+        pointer-events: none;
+        text-decoration: none;
+    }
+
+    &__listmenu {
+        padding: 10px 0px 20px 0px;
+    }
+
+    &__listitem {
+        position: relative;
+
+        a {
+            display: block;
+            padding: 5px 40px 5px 20px;
+            position: relative;
+            color: #3b3b3b;
+            font-size: 14px;
+            line-height: 20px;
+            text-decoration: none;
+
+            &::after {
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                margin-top: -9px;
+                color: #739d3c;
+                font-family: 'Font Awesome 5 Pro';
+                content: "\f105";
+                font-weight: 300;
+                font-size: 20px;
+            }
         }
     }
 }
