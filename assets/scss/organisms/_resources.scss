@@ -52,16 +52,26 @@
 
     &__rightcta {
         background-color: #015F74;
+        border:  1px solid #015F74;
         padding: 8px 24px;
         text-align: center;
         color: #fff;
         font-weight: 600;
+        cursor: pointer;
+
+        &:hover{
+            transition: 0.3s;
+            background-color: #fff;
+            color: #015F74;
+
+        }
     }
 
     &__cta {
         display: flex;
         justify-content: center;
         padding-top: 32px;
+
         &-button{
             background-color: #015F74;
             border: 1px solid #015F74;
