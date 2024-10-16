@@ -1,3 +1,15 @@
+@mixin pro-landscape {
+  @media (min-width: 1024px) and (max-width: 1367px) {
+    @content;
+  }
+}
+
+@mixin surfacepro-landscape {
+  @media (min-width: 912px) and (max-width: 1369px) {
+    @content;
+  }
+}
+
 @mixin tablet-pro {
   @media (min-width: 1024px) and (max-width: 1199px) {
     @content;
