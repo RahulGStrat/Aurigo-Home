@@ -121,7 +121,13 @@
         color: #ebebee;
         background-color: #fff;
     }
+
+    &.slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
 }
+
+    
 
 @media (min-width: 1200px) and (max-width: 1536px) {
     .aur-banner {
