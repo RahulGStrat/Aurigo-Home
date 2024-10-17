@@ -1,9 +1,9 @@
-.aur-header_footer{
+.aur-header_footer {
     .navbar {
         background-color: #fff;
         color: #333;
-        margin: 10px 0;
-        padding: 16px 0;
+        margin: 12px 0;
+        padding: 15px 0;
         transition: 0.6s;
         z-index: 99;
         position: fixed;
@@ -25,6 +25,10 @@
     .logo {
         margin: 0;
         padding-right: 24px;
+
+        img {
+            display: block;
+        }
     }
 
     .nav-menu ul {
@@ -35,8 +39,8 @@
 
     .nav-menu>ul>li {
         display: inline;
-        margin-left: 14px;
-        font-size: 14px;
+        margin-left: 15px;
+        font-size: 15px;
         line-height: 20px;
         font-weight: 900;
         position: relative;
@@ -57,7 +61,7 @@
     }
 
     .nav-menu ul li a {
-        color: #222;
+        color: #002a2f;
         text-decoration: none;
         transition: color 0.3s ease;
     }
@@ -79,7 +83,7 @@
 
     .nav-menu2 ul li {
         display: inline;
-        padding-left: 5px;
+        padding-left: 10px;
     }
 
     .nav-menu2-rbrd {
@@ -92,7 +96,7 @@
     }
 
     .nav-menu2 ul li a {
-        color: #222;
+        color: #505050;
         text-decoration: none;
         transition: color 0.3s ease;
         font-size: 13px;
